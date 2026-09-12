@@ -1,7 +1,9 @@
+import { Hero } from "@/components/sections/hero";
+
 export default function Home() {
   return (
-    <main className="flex-1">
-      {/* Ready for Hero Section (Step 3) */}
+    <main className="flex-1 bg-white">
+      <Hero />
     </main>
   );
 }

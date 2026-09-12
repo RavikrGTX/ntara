@@ -102,8 +102,8 @@ export function Navbar() {
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-200",
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border/80 shadow-[0_1px_3px_0_rgb(11_19_43/0.03)]"
-          : "bg-background/80 backdrop-blur-xs border-b border-transparent"
+          ? "bg-white/95 backdrop-blur-md border-b border-neutral-200/80 shadow-[0_1px_3px_0_rgb(11_19_43/0.04)]"
+          : "bg-white/90 backdrop-blur-xs border-b border-neutral-100"
       )}
     >
       <Container
@@ -119,7 +119,7 @@ export function Navbar() {
           className="group inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 rounded-sm py-1"
           aria-label="NTARA Homepage"
         >
-          <span className="font-heading font-extrabold text-2xl sm:text-[1.65rem] tracking-tight text-foreground transition-colors group-hover:text-brand-navy">
+          <span className="font-heading font-extrabold text-2xl sm:text-[1.65rem] tracking-tight text-brand-navy transition-colors">
             NTARA
           </span>
           <span
@@ -142,8 +142,8 @@ export function Navbar() {
                 className={cn(
                   "px-3.5 py-2 text-sm font-medium transition-colors rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2",
                   isActive
-                    ? "text-brand-blue font-semibold"
-                    : "text-foreground-muted hover:text-foreground hover:bg-secondary/60"
+                    ? "text-brand-blue font-semibold bg-brand-blue-subtle"
+                    : "text-neutral-600 hover:text-brand-navy hover:bg-neutral-100/70"
                 )}
               >
                 {item.label}
@@ -158,7 +158,7 @@ export function Navbar() {
             href="/contact"
             className={cn(
               buttonVariants({ variant: "accent", size: "default" }),
-              "h-9.5 px-4.5 text-sm font-medium tracking-tight shadow-sm"
+              "h-9.5 px-5 rounded-full text-sm font-semibold tracking-tight shadow-sm"
             )}
           >
             Partner With Us
@@ -171,7 +171,7 @@ export function Navbar() {
             ref={menuButtonRef}
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
-            className="inline-flex items-center justify-center size-10 rounded-lg text-foreground hover:bg-secondary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 transition-colors"
+            className="inline-flex items-center justify-center size-10 rounded-lg text-brand-navy hover:bg-neutral-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 transition-colors"
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation-dialog"
             aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -204,7 +204,7 @@ export function Navbar() {
           {/* Panel */}
           <div
             ref={menuRef}
-            className="relative bg-background border-b border-border shadow-xl px-5 sm:px-8 py-6 max-h-[calc(100vh-65px)] overflow-y-auto"
+            className="relative bg-white border-b border-neutral-200 shadow-2xl px-5 sm:px-8 py-6 max-h-[calc(100vh-65px)] overflow-y-auto"
           >
             <nav aria-label="Mobile Primary Navigation" className="flex flex-col space-y-1">
               {NAV_ITEMS.map((item) => {
@@ -217,8 +217,8 @@ export function Navbar() {
                     className={cn(
                       "px-4 py-3 text-base font-medium rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue",
                       isActive
-                        ? "bg-secondary text-brand-blue font-semibold"
-                        : "text-foreground hover:bg-secondary/80"
+                        ? "bg-brand-blue-subtle text-brand-blue font-semibold"
+                        : "text-neutral-700 hover:bg-neutral-100 hover:text-brand-navy"
                     )}
                   >
                     {item.label}
@@ -226,13 +226,13 @@ export function Navbar() {
                 );
               })}
 
-              <div className="pt-4 mt-2 border-t border-border">
+              <div className="pt-4 mt-2 border-t border-neutral-100">
                 <Link
                   href="/contact"
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(
                     buttonVariants({ variant: "accent", size: "lg" }),
-                    "w-full justify-center text-sm font-semibold"
+                    "w-full justify-center rounded-full text-sm font-semibold shadow-md"
                   )}
                 >
                   Partner With Us
