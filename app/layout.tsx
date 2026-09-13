@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Manrope } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -61,6 +62,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col font-sans bg-background text-foreground antialiased selection:bg-brand-blue-subtle selection:text-brand-navy">
         <Navbar />
         <div className="flex-1 flex flex-col">{children}</div>
+        <Footer />
       </body>
     </html>
   );
