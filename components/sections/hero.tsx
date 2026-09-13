@@ -145,19 +145,14 @@ export function Hero() {
                 />
               </svg>
 
-              {/* Main Circular Image Frame */}
-              <div className="relative size-[300px] sm:size-[380px] lg:size-[430px] rounded-full overflow-hidden border-[6px] sm:border-8 border-white shadow-[0_20px_50px_-15px_rgba(11,19,43,0.14)] bg-neutral-100 z-10">
-                {/* 
-                  PLACEHOLDER IMAGE:
-                  To use your actual image, place it in /public/images/ and change the src below.
-                  Example: src="/images/my-actual-photo.jpg"
-                */}
+              {/* Main Circular Image Frame with NTARA Logo */}
+              <div className="relative size-[300px] sm:size-[380px] lg:size-[430px] rounded-full overflow-hidden border-[6px] sm:border-8 border-white shadow-[0_20px_50px_-15px_rgba(11,19,43,0.14)] bg-white z-10 flex items-center justify-center">
                 <Image
-                  src="/images/hero-placeholder.svg"
-                  alt="NTARA Skill Intelligence Platform - Future-ready generation"
+                  src="/images/ntara-logo.png"
+                  alt="NTARA Skill Intelligence Platform"
                   fill
                   priority
-                  className="object-cover object-center"
+                  className="object-contain p-8 sm:p-12"
                 />
               </div>
 

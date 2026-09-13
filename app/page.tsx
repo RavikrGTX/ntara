@@ -11,7 +11,7 @@ export default function Home() {
     <main className="flex-1 bg-white">
       <Hero />
       <EcosystemPreview />
-      <Challenge />
+      {/* <Challenge /> */}
       <SchoolsPreview />
       <GovernmentPreview />
       <CollegesIndustryPreview />

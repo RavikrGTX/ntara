@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -113,18 +114,19 @@ export function Navbar() {
           isScrolled ? "h-16" : "h-20"
         )}
       >
-        {/* NTARA Wordmark (Clean, institutional, no fake icons) */}
+        {/* NTARA Official Logo */}
         <Link
           href="/"
-          className="group inline-flex items-center gap-1.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 rounded-sm py-1"
+          className="group inline-flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 rounded-sm py-1"
           aria-label="NTARA Homepage"
         >
-          <span className="font-heading font-extrabold text-2xl sm:text-[1.65rem] tracking-tight text-brand-navy transition-colors">
-            NTARA
-          </span>
-          <span
-            className="size-1.5 rounded-full bg-brand-blue translate-y-0.5"
-            aria-hidden="true"
+          <Image
+            src="/images/ntara-logo.png"
+            alt="NTARA Logo"
+            width={140}
+            height={44}
+            className="h-9 sm:h-10 w-auto object-contain"
+            priority
           />
         </Link>
 
