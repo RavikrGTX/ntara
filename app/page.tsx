@@ -4,6 +4,7 @@ import { EcosystemPreview } from "@/components/sections/ecosystem-preview";
 import { SchoolsPreview } from "@/components/sections/schools-preview";
 import { GovernmentPreview } from "@/components/sections/government-preview";
 import { CollegesIndustryPreview } from "@/components/sections/colleges-industry-preview";
+import { FinalCta } from "@/components/sections/final-cta";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <SchoolsPreview />
       <GovernmentPreview />
       <CollegesIndustryPreview />
+      <FinalCta />
     </main>
   );
 }
