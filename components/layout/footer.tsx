@@ -150,7 +150,7 @@ export function Footer() {
               {/* Primary Footer CTA */}
               <div className="pt-2">
                 <Link
-                  href="/contact"
+                  href="/partner"
                   className="inline-flex items-center justify-center h-11 px-5 sm:px-6 rounded-lg sm:rounded-full text-sm font-semibold text-white bg-brand-blue hover:bg-brand-blue-hover shadow-[0_2px_12px_rgba(29,99,255,0.25)] transition-all duration-200 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 focus-visible:ring-offset-brand-navy-deep group"
                 >
                   <span>Partner with NTARA</span>

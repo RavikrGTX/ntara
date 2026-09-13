@@ -155,7 +155,7 @@ export function Navbar() {
         {/* Desktop Right CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <Link
-            href="/contact"
+            href="/partner"
             className={cn(
               buttonVariants({ variant: "accent", size: "default" }),
               "h-9.5 px-5 rounded-full text-sm font-semibold tracking-tight shadow-sm"
@@ -228,7 +228,7 @@ export function Navbar() {
 
               <div className="pt-4 mt-2 border-t border-neutral-100">
                 <Link
-                  href="/contact"
+                  href="/partner"
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(
                     buttonVariants({ variant: "accent", size: "lg" }),

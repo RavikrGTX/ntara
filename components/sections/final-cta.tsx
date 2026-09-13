@@ -66,7 +66,7 @@ export function FinalCta() {
             <div className="flex flex-wrap items-center gap-4 pt-2 sm:pt-3 w-full sm:w-auto">
               {/* Primary CTA */}
               <Link
-                href="/contact"
+                href="/partner"
                 className="inline-flex items-center justify-center h-12 px-6 sm:px-7 rounded-xl sm:rounded-full text-sm sm:text-base font-semibold text-white bg-brand-blue hover:bg-brand-blue-hover shadow-[0_4px_16px_rgba(29,99,255,0.22)] transition-all duration-200 active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue focus-visible:ring-offset-2 group"
               >
                 <span>Partner with NTARA</span>
