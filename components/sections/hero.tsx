@@ -57,7 +57,7 @@ export function Hero() {
 
               {/* Secondary CTA (Arrow link style from reference) */}
               <Link
-                href="/contact"
+                href="/partner"
                 className="group inline-flex items-center gap-1.5 text-sm sm:text-base font-semibold text-brand-navy hover:text-brand-blue transition-colors py-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-blue rounded"
               >
                 <span>Partner With Us</span>
